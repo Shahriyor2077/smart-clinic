@@ -28,6 +28,20 @@ const translations = {
       success: "Arizangiz muvaffaqiyatli yuborildi! Tez orada siz bilan bog'lanamiz.",
       error: "Xatolik yuz berdi. Qayta urinib ko'ring.",
     },
+    servicesPreview: {
+      title: 'Bizning xizmatlar',
+      viewAll: 'Barcha xizmatlar',
+      items: [
+        { title: 'Shifokor konsultatsiyasi', desc: '12 soha bo\'yicha malakali mutaxassislar bilan uchrashув' },
+        { title: 'UZI diagnostika', desc: 'Zamonaviy uskunalar bilan tez va aniq natija' },
+        { title: 'Laboratoriya tahlillari', desc: '100+ turdagi tahlillar, bir kunda javob' },
+        { title: 'Reabilitatsiya', desc: 'LFK, massaj va fizioterapiya dasturlari' },
+        { title: 'Kardiologiya', desc: 'Yurak va qon tomir kasalliklarini davolash' },
+        { title: 'Pediatriya', desc: 'Bolalar salomatligi uchun mutaxassis shifokorlar' },
+        { title: 'Ginekologiya', desc: 'Ayollar salomatligi bo\'yicha to\'liq xizmat' },
+        { title: 'Nevrologiya', desc: 'Asab tizimi kasalliklari diagnostika va davolash' },
+      ],
+    },
     services: {
       pageTitle: 'Xizmatlar',
       categories: {
@@ -77,6 +91,20 @@ const translations = {
       submit: 'Отправить заявку',
       success: 'Ваша заявка успешно отправлена! Мы свяжемся с вами в ближайшее время.',
       error: 'Произошла ошибка. Попробуйте ещё раз.',
+    },
+    servicesPreview: {
+      title: 'Наши услуги',
+      viewAll: 'Все услуги',
+      items: [
+        { title: 'Консультация врача', desc: 'Квалифицированные специалисты по 12 направлениям' },
+        { title: 'УЗИ диагностика', desc: 'Быстрый и точный результат на современном оборудовании' },
+        { title: 'Лабораторные анализы', desc: 'Более 100 видов анализов, результат за один день' },
+        { title: 'Реабилитация', desc: 'ЛФК, массаж и программы физиотерапии' },
+        { title: 'Кардиология', desc: 'Диагностика и лечение сердечно-сосудистых заболеваний' },
+        { title: 'Педиатрия', desc: 'Специалисты по здоровью детей и подростков' },
+        { title: 'Гинекология', desc: 'Полный спектр услуг по женскому здоровью' },
+        { title: 'Неврология', desc: 'Диагностика и лечение заболеваний нервной системы' },
+      ],
     },
     services: {
       pageTitle: 'Услуги',
