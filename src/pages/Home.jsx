@@ -1,22 +1,26 @@
 import { Link } from 'react-router-dom'
 import ApplicationForm from '../components/ApplicationForm'
 import { Clock, Zap, FlaskConical, UserRound, Heart } from 'lucide-react'
+import shifokorImg from '../assets/image4.jpg'
+import reabilitatsiyaImg from '../assets/image1.jpg'
+import laboratoriyaImg from '../assets/image2.jpg'
+import uziImg from '../assets/image3.png'
 
 const icons = [Clock, Zap, FlaskConical, UserRound, Heart]
 
 const serviceImages = [
   // Shifokor konsultatsiyasi — female doctor
-  { src: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&q=80', pos: 'top' },
+  { src: shifokorImg, pos: 'top' },
   // UZI diagnostika — ultrasound scan
-  { src: 'https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=600&q=80', pos: 'center' },
-  // Laboratoriya — lab microscope
-  { src: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?w=600&q=80', pos: 'center' },
-  // Reabilitatsiya — physiotherapy
-  { src: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80', pos: 'center' },
-  // Kardiologiya — ECG heart monitor
-  { src: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80', pos: 'center' },
+  { src: uziImg, pos: 'center' },
+  // Laboratoriya — lab
+  { src: laboratoriyaImg, pos: 'center' },
+  // Reabilitatsiya — physiotherapy exercise
+  { src: reabilitatsiyaImg, pos: 'center' },
+  // Kardiologiya — ECG cardiogram
+  { src: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=600&q=80', pos: 'center' },
   // Pediatriya — doctor with child
-  { src: 'https://images.unsplash.com/photo-1576765608622-067973a79f53?w=600&q=80', pos: 'top' },
+  { src: 'https://images.unsplash.com/photo-1603398938378-e54eab446dde?w=600&q=80', pos: 'top' },
   // Ginekologiya — women health doctor
   { src: 'https://images.unsplash.com/photo-1638202993928-7267aad84c31?w=600&q=80', pos: 'top' },
   // Nevrologiya — brain scan MRI
@@ -35,6 +39,20 @@ function Home({ t }) {
             <div className="hero-badge">Smart Clinic</div>
             <h1 className="hero-title">{t.hero.title}</h1>
             <p className="hero-subtitle">{t.hero.subtitle}</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats */}
+      <section className="stats-section">
+        <div className="container">
+          <div className="stats-grid">
+            {t.stats.map((s, idx) => (
+              <div key={idx} className="stat-card">
+                <span className="stat-value">{s.value}</span>
+                <span className="stat-label">{s.label}</span>
+              </div>
+            ))}
           </div>
         </div>
       </section>

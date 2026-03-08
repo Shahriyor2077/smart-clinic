@@ -1,5 +1,5 @@
 import logo from '../assets/20240102_000350.png'
-import { MapPin, Phone, Clock } from 'lucide-react'
+import { MapPin, Phone, Clock, Instagram, Send } from 'lucide-react'
 
 function Footer({ t }) {
   const f = t.footer
@@ -29,6 +29,14 @@ function Footer({ t }) {
               <li>
                 <Clock size={16} strokeWidth={1.8} className="footer-icon-svg" />
                 {f.hoursLabel}: {f.hours}
+              </li>
+              <li>
+                <Instagram size={16} strokeWidth={1.8} className="footer-icon-svg" />
+                <a href="https://instagram.com/smartclinicuz" target="_blank" rel="noopener noreferrer">{f.instagram}</a>
+              </li>
+              <li>
+                <Send size={16} strokeWidth={1.8} className="footer-icon-svg" />
+                <a href="https://t.me/smart_clinicuz" target="_blank" rel="noopener noreferrer">{f.telegram}</a>
               </li>
             </ul>
           </div>
