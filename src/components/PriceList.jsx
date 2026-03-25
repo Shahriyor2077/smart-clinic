@@ -7,6 +7,10 @@ function PriceList({ lang }) {
 
   const title = lang === 'uz' ? "Narxlar ro'yxati" : 'Прейскурант'
 
+  const handleToggle = (idx) => {
+    setOpen(open === idx ? null : idx)
+  }
+
   return (
     <section className="price-list-section">
       <div className="container">
@@ -15,8 +19,9 @@ function PriceList({ lang }) {
           {prices[lang].map((cat, idx) => (
             <div key={idx} className="price-category">
               <button
+                type="button"
                 className={`price-cat-header${open === idx ? ' open' : ''}`}
-                onClick={() => setOpen(open === idx ? null : idx)}
+                onClick={() => handleToggle(idx)}
               >
                 <span>{cat.title}</span>
                 <ChevronDown size={18} className="price-chevron" />

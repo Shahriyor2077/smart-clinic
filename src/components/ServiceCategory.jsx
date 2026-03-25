@@ -1,6 +1,6 @@
 import ServiceCard from './ServiceCard'
 
-function ServiceCategory({ title, items, detailLink }) {
+function ServiceCategory({ title, items }) {
   return (
     <div className="service-category">
       <h3 className="category-title">{title}</h3>
@@ -9,8 +9,6 @@ function ServiceCategory({ title, items, detailLink }) {
           <ServiceCard
             key={item.name}
             name={item.name}
-            url={item.url}
-            detailLink={detailLink}
           />
         ))}
       </div>

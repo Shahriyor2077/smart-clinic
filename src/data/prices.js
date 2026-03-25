@@ -1276,7 +1276,7 @@ const prices = {
       ],
     },
     {
-      title: 'PROTSEDURALAR',
+      title: 'MUOLAJALAR',
       items: [
         { name: '1 oylikdan 12 yoshgacha bolalarga vena ichiga tomchilab (v/v kap)', price: '25 000' },
         { name: 'Yosh bolalarga 2,3,4 (v/v kap)', price: '10 000' },

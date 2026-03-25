@@ -1,5 +1,7 @@
 /* ===== RESET & BASE ===== */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -7,16 +9,22 @@
 
 :root {
   /* Logo ranglariga mos: chap "S" = to'q teal, o'ng "C" = yorqin cyan */
-  --blue-dark: #155F7A;   /* chap doira — to'q teal */
-  --blue-mid:  #1A8FA8;   /* o'rta teal */
-  --blue-light: #2ECBDB;  /* o'ng doira — yorqin cyan */
-  --blue-bg: #E0F8FB;     /* juda ochiq cyan fon */
-  --blue-bg2: #B2EEF5;    /* ochiq cyan border */
+  --blue-dark: #155F7A;
+  /* chap doira — to'q teal */
+  --blue-mid: #1A8FA8;
+  /* o'rta teal */
+  --blue-light: #2ECBDB;
+  /* o'ng doira — yorqin cyan */
+  --blue-bg: #E0F8FB;
+  /* juda ochiq cyan fon */
+  --blue-bg2: #B2EEF5;
+  /* ochiq cyan border */
   --white: #ffffff;
   --gray-100: #F4F7F9;
   --gray-200: #E5ECEF;
   --gray-500: #6B7280;
-  --gray-700: #1C3A52;    /* logo matn rangi — to'q navy */
+  --gray-700: #1C3A52;
+  /* logo matn rangi — to'q navy */
   --gray-900: #0F2535;
   --radius: 12px;
   --radius-sm: 8px;
@@ -159,7 +167,7 @@ body {
 /* ===== HERO ===== */
 .hero {
   background:
-    linear-gradient(135deg, rgba(21,95,122,0.85) 0%, rgba(26,143,168,0.80) 60%, rgba(46,203,219,0.72) 100%),
+    linear-gradient(135deg, rgba(21, 95, 122, 0.85) 0%, rgba(26, 143, 168, 0.80) 60%, rgba(46, 203, 219, 0.72) 100%),
     url('https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=1400&q=80') center center/cover no-repeat;
   padding: 0;
   min-height: 100vh;
@@ -176,7 +184,7 @@ body {
   right: -60px;
   width: 340px;
   height: 340px;
-  background: rgba(255,255,255,0.06);
+  background: rgba(255, 255, 255, 0.06);
   border-radius: 50%;
 }
 
@@ -187,7 +195,7 @@ body {
   left: -40px;
   width: 240px;
   height: 240px;
-  background: rgba(255,255,255,0.04);
+  background: rgba(255, 255, 255, 0.04);
   border-radius: 50%;
 }
 
@@ -203,9 +211,9 @@ body {
 
 .hero-badge {
   display: inline-block;
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
   color: white;
-  border: 1px solid rgba(255,255,255,0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 20px;
   padding: 6px 20px;
   font-size: 0.85rem;
@@ -226,7 +234,7 @@ body {
 
 .hero-subtitle {
   font-size: clamp(1.1rem, 2vw, 1.35rem);
-  color: rgba(255,255,255,0.85);
+  color: rgba(255, 255, 255, 0.85);
   max-width: 520px;
   margin: 0 auto;
 }
@@ -260,7 +268,7 @@ body {
 
 .stat-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(21,95,122,0.12);
+  box-shadow: 0 8px 24px rgba(21, 95, 122, 0.12);
 }
 
 .stat-value {
@@ -340,7 +348,7 @@ body {
 /* ===== PAGE HEADER ===== */
 .page-header {
   background:
-    linear-gradient(135deg, rgba(21,95,122,0.85) 0%, rgba(26,143,168,0.80) 60%, rgba(46,203,219,0.72) 100%),
+    linear-gradient(135deg, rgba(21, 95, 122, 0.85) 0%, rgba(26, 143, 168, 0.80) 60%, rgba(46, 203, 219, 0.72) 100%),
     url('https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=1400&q=80') center/cover no-repeat;
   min-height: 100vh;
   display: flex;
@@ -591,12 +599,27 @@ body {
 
 .price-cat-body {
   padding: 0;
+  overflow-x: auto;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+
+  to {
+    opacity: 1;
+    max-height: 2000px;
+  }
 }
 
 .price-table {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.88rem;
+  min-width: 100%;
 }
 
 .price-table tr.even {
@@ -614,6 +637,7 @@ body {
 
 .price-name {
   color: var(--text-primary);
+  word-break: break-word;
 }
 
 .price-value {
@@ -621,7 +645,46 @@ body {
   font-weight: 600;
   color: var(--blue-primary);
   text-align: right;
-  min-width: 130px;
+  min-width: 100px;
+  padding-left: 12px;
+}
+
+@media (max-width: 768px) {
+  .price-table td {
+    padding: 10px 16px;
+    font-size: 0.86rem;
+  }
+
+  .price-value {
+    min-width: 90px;
+  }
+}
+
+@media (max-width: 480px) {
+  .price-table {
+    font-size: 0.82rem;
+  }
+
+  .price-table td {
+    padding: 8px 10px;
+    font-size: 0.8rem;
+  }
+
+  .price-value {
+    min-width: 75px;
+    font-size: 0.8rem;
+    padding-left: 8px;
+  }
+
+  .price-name {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+  .price-cat-header {
+    padding: 12px 14px;
+    font-size: 0.88rem;
+  }
 }
 
 .application-form {
@@ -758,7 +821,7 @@ body {
 /* ===== FOOTER ===== */
 .footer {
   background: linear-gradient(160deg, #0A2535 0%, #0D3545 60%, #0E3D4E 100%);
-  color: rgba(255,255,255,0.7);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .footer-inner {
@@ -772,7 +835,7 @@ body {
   grid-template-columns: 1.4fr 1fr 1fr;
   gap: 48px;
   padding: 56px 0 40px;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .footer-col {
@@ -793,7 +856,7 @@ body {
 
 .footer-tagline {
   font-size: 0.85rem;
-  color: rgba(255,255,255,0.45);
+  color: rgba(255, 255, 255, 0.45);
   line-height: 1.5;
 }
 
@@ -815,7 +878,7 @@ body {
 
 .footer-list li {
   font-size: 0.9rem;
-  color: rgba(255,255,255,0.65);
+  color: rgba(255, 255, 255, 0.65);
   display: flex;
   align-items: flex-start;
   gap: 8px;
@@ -829,7 +892,7 @@ body {
 }
 
 .footer-list a {
-  color: rgba(255,255,255,0.65);
+  color: rgba(255, 255, 255, 0.65);
   text-decoration: none;
 }
 
@@ -844,7 +907,7 @@ body {
 
 .footer-bottom p {
   font-size: 0.82rem;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* ===== HAMBURGER ===== */
@@ -1029,5 +1092,30 @@ body {
   .detail-link {
     width: 100%;
     text-align: center;
+  }
+}
+
+@media (max-width: 360px) {
+  .container {
+    padding: 0 12px;
+  }
+
+  .price-table td {
+    padding: 7px 8px;
+    font-size: 0.75rem;
+  }
+
+  .price-value {
+    min-width: 70px;
+    font-size: 0.75rem;
+  }
+
+  .price-name {
+    font-size: 0.75rem;
+  }
+
+  .price-cat-header {
+    padding: 10px 12px;
+    font-size: 0.82rem;
   }
 }

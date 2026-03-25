@@ -5,6 +5,7 @@ import shifokorImg from '../assets/image4.jpg'
 import reabilitatsiyaImg from '../assets/image1.jpg'
 import laboratoriyaImg from '../assets/image2.jpg'
 import uziImg from '../assets/image3.png'
+import lorImg from '../assets/lor.jpg'
 
 const icons = [Clock, Zap, FlaskConical, UserRound, Heart]
 
@@ -17,8 +18,8 @@ const serviceImages = [
   { src: laboratoriyaImg, pos: 'center' },
   // Reabilitatsiya — physiotherapy exercise
   { src: reabilitatsiyaImg, pos: 'center' },
-  // Kardiologiya — ECG cardiogram
-  { src: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=600&q=80', pos: 'center' },
+  // LOR (Otorinolaringolog) — ENT doctor
+  { src: lorImg, pos: 'center' },
   // Pediatriya — doctor with child
   { src: 'https://images.unsplash.com/photo-1603398938378-e54eab446dde?w=600&q=80', pos: 'top' },
   // Ginekologiya — women health doctor
