@@ -6,6 +6,7 @@ import reabilitatsiyaImg from '../assets/image1.jpg'
 import laboratoriyaImg from '../assets/image2.jpg'
 import uziImg from '../assets/image3.png'
 import lorImg from '../assets/lor.jpg'
+import pediatrImg from '../assets/pediatr.jpg'
 
 const icons = [Clock, Zap, FlaskConical, UserRound, Heart]
 
@@ -21,7 +22,7 @@ const serviceImages = [
   // LOR (Otorinolaringolog) — ENT doctor
   { src: lorImg, pos: 'center' },
   // Pediatriya — doctor with child
-  { src: 'https://images.unsplash.com/photo-1603398938378-e54eab446dde?w=600&q=80', pos: 'top' },
+  { src: pediatrImg, pos: 'top' },
   // Ginekologiya — women health doctor
   { src: 'https://images.unsplash.com/photo-1638202993928-7267aad84c31?w=600&q=80', pos: 'top' },
   // Nevrologiya — brain scan MRI
