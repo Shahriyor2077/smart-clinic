@@ -11,21 +11,13 @@ import pediatrImg from '../assets/pediatr.jpg'
 const icons = [Clock, Zap, FlaskConical, UserRound, Heart]
 
 const serviceImages = [
-  // Shifokor konsultatsiyasi — female doctor
   { src: shifokorImg, pos: 'top' },
-  // UZI diagnostika — ultrasound scan
   { src: uziImg, pos: 'center' },
-  // Laboratoriya — lab
   { src: laboratoriyaImg, pos: 'center' },
-  // Reabilitatsiya — physiotherapy exercise
   { src: reabilitatsiyaImg, pos: 'center' },
-  // LOR (Otorinolaringolog) — ENT doctor
   { src: lorImg, pos: 'center' },
-  // Pediatriya — doctor with child
   { src: pediatrImg, pos: 'top' },
-  // Ginekologiya — women health doctor
   { src: 'https://images.unsplash.com/photo-1638202993928-7267aad84c31?w=600&q=80', pos: 'top' },
-  // Nevrologiya — brain scan MRI
   { src: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&q=80', pos: 'center' },
 ]
 
@@ -34,7 +26,6 @@ function Home({ t }) {
 
   return (
     <>
-      {/* Hero */}
       <section className="hero">
         <div className="container">
           <div className="hero-content">
@@ -45,7 +36,6 @@ function Home({ t }) {
         </div>
       </section>
 
-      {/* Stats */}
       <section className="stats-section">
         <div className="container">
           <div className="stats-grid">
@@ -59,7 +49,6 @@ function Home({ t }) {
         </div>
       </section>
 
-      {/* About */}
       <section className="about">
         <div className="container">
           <h2 className="section-title">{t.about.title}</h2>
@@ -79,7 +68,6 @@ function Home({ t }) {
         </div>
       </section>
 
-      {/* Services Preview */}
       <section className="services-preview">
         <div className="container">
           <h2 className="section-title">{sp.title}</h2>
@@ -107,7 +95,6 @@ function Home({ t }) {
         </div>
       </section>
 
-      {/* Application Form */}
       <ApplicationForm t={t} />
     </>
   )

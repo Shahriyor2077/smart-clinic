@@ -14,7 +14,6 @@ function PriceList({ lang }) {
     e.preventDefault()
 
     if (open !== null && open !== idx) {
-      // Boshqa bo'lim ochilayotgan bo'lsa - scroll qilish
       setOpen(idx)
       setTimeout(() => {
         if (categoryRefs.current[idx]) {
@@ -30,7 +29,6 @@ function PriceList({ lang }) {
         }
       }, 50)
     } else {
-      // O'sha bo'limni yopish yoki birinchi marta ochish
       setOpen(open === idx ? null : idx)
     }
   }

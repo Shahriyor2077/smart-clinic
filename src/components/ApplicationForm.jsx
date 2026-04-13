@@ -47,8 +47,7 @@ async function sendToTelegram(data) {
 
 function ApplicationForm({ t }) {
   const [formData, setFormData] = useState({ name: '', phone: '', service: '', comment: '' })
-  const [status, setStatus] = useState('idle') // idle | loading | success | error
-
+  const [status, setStatus] = useState('idle')
   function handleChange(e) {
     setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }))
   }

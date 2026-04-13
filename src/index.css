@@ -1,4 +1,4 @@
-/* ===== RESET & BASE ===== */
+
 *,
 *::before,
 *::after {
@@ -8,23 +8,16 @@
 }
 
 :root {
-  /* Logo ranglariga mos: chap "S" = to'q teal, o'ng "C" = yorqin cyan */
   --blue-dark: #155F7A;
-  /* chap doira — to'q teal */
   --blue-mid: #1A8FA8;
-  /* o'rta teal */
   --blue-light: #2ECBDB;
-  /* o'ng doira — yorqin cyan */
   --blue-bg: #E0F8FB;
-  /* juda ochiq cyan fon */
   --blue-bg2: #B2EEF5;
-  /* ochiq cyan border */
   --white: #ffffff;
   --gray-100: #F4F7F9;
   --gray-200: #E5ECEF;
   --gray-500: #6B7280;
   --gray-700: #1C3A52;
-  /* logo matn rangi — to'q navy */
   --gray-900: #0F2535;
   --radius: 12px;
   --radius-sm: 8px;
@@ -126,7 +119,6 @@ body {
   color: var(--white);
 }
 
-/* Language Toggle */
 .lang-toggle {
   display: flex;
   align-items: center;
@@ -164,7 +156,6 @@ body {
   font-size: 0.9rem;
 }
 
-/* ===== HERO ===== */
 .hero {
   background:
     linear-gradient(135deg, rgba(21, 95, 122, 0.85) 0%, rgba(26, 143, 168, 0.80) 60%, rgba(46, 203, 219, 0.72) 100%),
