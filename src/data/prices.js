@@ -661,7 +661,7 @@ const prices = {
     {
       title: 'QON UMUMIY KLINIK TAHLILI',
       items: [
-        { name: 'Qon klinik tahlili: umumiy tahlil, EChT', price: '40 000' },
+        { name: 'Qon klinik tahlili: umumiy tahlil, EChT', price: '45 000' },
         { name: 'Qon klinik tahlili kengaytirilgan: umumiy tahlil, leykoformula, EChT', price: '50 000' },
         { name: 'Qon umumiy tahlili', price: '30 000' },
         { name: 'Eritrositlar cho\'kish tezligi (EChT)', price: '20 000' },
